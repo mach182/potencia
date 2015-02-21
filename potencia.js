@@ -6,35 +6,32 @@ var i = 0;
 
 n = prompt("Escoge tu numero base");
 p = prompt("Escoge tu potencia");
-i = n
 alert("Tu numero base es " + n + "\nY tu potencia es " + p);
 
-if ( n == 0) 
-	{ 			//La potencia de 0 siempre va a ser 0
-	alert("Tu numero es " + n); 
-	
+if ( n != 0 && n != 1)  //Pregunto si es diferente de 0 porque si es 0 la potencia termina siendo 0, el 1 igual.
+	if ( p == 0) 
+	{			 //Cualquier numero elevado a la potencia 0 es 1.
+		n = 1;
 	}
-	else if ( n == 1) 
-		{ 		//La potencia de 1 siempre va a ser 1
-		alert("Tu numero es " + n);
+	else // IMPORTANTE, el else lleva a que se haga todo, tiene que estar todo entre llaves.
+	{
+		if (p < 0)
+		{
+			n = 1/n
+			p = -p
 		}
 
-		else if ( p == 0) 
-			{			 //Cualquier numero elevado a la potencia 0 es 1
-				n = 1;
-				alert("Tu numero es " + n);
-			}
-			else if (p < 0)
-			 {
-				
-				while (p != -1)
-				{
-					n = n * i;
-					alert(n);
-					p++;
-				}
-			
+		i = n
 
-			}
+		while(p != 1)
+		{
+			n = n  * i,
 
-				// else if (true) {}
+			p--
+		}
+
+	}
+	
+
+		
+	alert("Tu numero es " + n); 
