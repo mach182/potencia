@@ -13,7 +13,7 @@ if ( n != 0 && n != 1)  //Pregunto si es diferente de 0 porque si es 0 la potenc
 	{			 //Cualquier numero elevado a la potencia 0 es 1.
 		n = 1;
 	}
-	else // IMPORTANTE, el else lleva a que se haga todo, tiene que estar todo entre llaves.
+	else // IMPORTANTE, el else lleva a que se haga todo, tiene que estar todo entre llaves. Recuerda que el if no tiene q abarcar todo el else.
 	{
 		if (p < 0)
 		{
